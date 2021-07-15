@@ -11,6 +11,7 @@ local piggy = Instance.new("TextButton")
 local gungames = Instance.new("TextButton")
 local easygggames = Instance.new("TextButton")
 local creds = Instance.new("TextButton")
+local Extras = Instance.new("TextButton")
 
 --Properties:
 
@@ -59,8 +60,8 @@ piggy.TextWrapped = true
 gungames.Name = "gungames"
 gungames.Parent = Frame
 gungames.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
-gungames.Position = UDim2.new(0.511340201, 0, 0.164420485, 0)
-gungames.Size = UDim2.new(0, 216, 0, 140)
+gungames.Position = UDim2.new(0.509282768, 0, 0.164420485, 0)
+gungames.Size = UDim2.new(0, 216, 0, 65)
 gungames.Font = Enum.Font.SourceSans
 gungames.Text = "Hub Selector"
 gungames.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -92,9 +93,21 @@ creds.TextScaled = true
 creds.TextSize = 14.000
 creds.TextWrapped = true
 
+Extras.Name = "Extras"
+Extras.Parent = Frame
+Extras.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+Extras.Position = UDim2.new(0.509282768, 0, 0.366576821, 0)
+Extras.Size = UDim2.new(0, 216, 0, 65)
+Extras.Font = Enum.Font.SourceSans
+Extras.Text = "Extras"
+Extras.TextColor3 = Color3.fromRGB(0, 0, 0)
+Extras.TextScaled = true
+Extras.TextSize = 14.000
+Extras.TextWrapped = true
+
 -- Scripts:
 
-local function QRNLHH_fake_script() -- Frame.LocalScript 
+local function BYMODP_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -169,15 +182,15 @@ local function QRNLHH_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(QRNLHH_fake_script)()
-local function PKDJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(BYMODP_fake_script)()
+local function RQTC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(PKDJ_fake_script)()
+coroutine.wrap(RQTC_fake_script)()
 
 gungames.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/hubs"))()
@@ -195,4 +208,7 @@ piggy.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/test"))()
 end)
 
+Extras.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/extras"))()
+end)
 
