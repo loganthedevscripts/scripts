@@ -91,26 +91,120 @@ page.TextScaled = true
 page.TextSize = 14.000
 page.TextWrapped = true
 
-PrisonLife.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
-end)
+-- Scripts:
 
-Jailbreak.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+local function RFTJQWN_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+	
+	
+end
+coroutine.wrap(RFTJQWN_fake_script)()
+local function SFWEIT_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(SFWEIT_fake_script)()
+local function PEZEBTE_fake_script() -- page.LocalScript 
+	local script = Instance.new('LocalScript', page)
+
+	
+end
+coroutine.wrap(PEZEBTE_fake_script)()
+
+PrisonLife.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
 end)
 
 easygggames.MouseButton1Down:connect(function()
 	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
 end)
 
-page.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/gui2finishfresh"))();
+Jailbreak.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
 end)
 
-easygggames.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+page.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/gui2finishfresh"))()
 end)
 
 PrisonLife.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()"))()
+	script: loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 end)
+
+easygggames.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+end)
+
