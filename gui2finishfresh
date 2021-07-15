@@ -92,19 +92,112 @@ page.TextScaled = true
 page.TextSize = 14.000
 page.TextWrapped = true
 
-SkyWars.MouseButton1Down:connect(function()
-	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DohmBoyOG/Script-Dump/main/OPSkywarsGUI_NolixXDohmScripts_Public.lua"))()
+-- Scripts:
+
+local function PPEGR_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+	
+	
+end
+coroutine.wrap(PPEGR_fake_script)()
+local function WOOLT_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(WOOLT_fake_script)()
+local function RMTLAR_fake_script() -- page.LocalScript 
+	local script = Instance.new('LocalScript', page)
+
+
+end
+coroutine.wrap(RMTLAR_fake_script)()
+
+page.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/gui3"))()
 end)
 
 mm.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
 end)
 
 resturant.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+	script: loadstring(game:HttpGet("loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
 end)
 
-page.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/gui3"))();
+SkyWars.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DohmBoyOG/Script-Dump/main/OPSkywarsGUI_NolixXDohmScripts_Public.lua"))()
 end)
 
