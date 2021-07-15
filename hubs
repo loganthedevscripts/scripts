@@ -10,6 +10,7 @@ local UnnamedHub = Instance.new("TextButton")
 local VoltHub = Instance.new("TextButton")
 local MonkeyHub = Instance.new("TextButton")
 local DarkHub = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -81,6 +82,28 @@ DarkHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 DarkHub.TextScaled = true
 DarkHub.TextSize = 14.000
 DarkHub.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.436985403, 0, -0.127551019, 0)
+TextButton.Size = UDim2.new(0, 55, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function EEVQ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(EEVQ_fake_script)()
 
 OwlHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
