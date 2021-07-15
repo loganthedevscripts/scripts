@@ -180,19 +180,19 @@ end
 coroutine.wrap(PKDJ_fake_script)()
 
 gungames.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/hubs"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/hubs"))()
 end)
 
 easygggames.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 end)
 
 creds.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/credits%20REMADE"))()
+	loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/credits%20REMADE"))()
 end)
 
 piggy.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/test"))()
+	loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/test"))()
 end)
 
 
