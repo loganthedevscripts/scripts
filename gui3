@@ -1,14 +1,21 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui3 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
-local uncat1 = Instance.new("TextButton")
+local piggy = Instance.new("TextButton")
 local gungames = Instance.new("TextButton")
 local easygggames = Instance.new("TextButton")
 local creds = Instance.new("TextButton")
 
+--Properties:
+
 ScreenGui3.Name = "ScreenGui3"
-ScreenGui3.Parent = game.Workspace
+ScreenGui3.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui3
@@ -37,17 +44,17 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
-uncat1.Name = "uncat1"
-uncat1.Parent = Frame
-uncat1.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
-uncat1.Position = UDim2.new(0.018556701, 0, 0.164420485, 0)
-uncat1.Size = UDim2.new(0, 216, 0, 140)
-uncat1.Font = Enum.Font.SourceSans
-uncat1.Text = "Uncategorized 1"
-uncat1.TextColor3 = Color3.fromRGB(0, 0, 0)
-uncat1.TextScaled = true
-uncat1.TextSize = 14.000
-uncat1.TextWrapped = true
+piggy.Name = "piggy"
+piggy.Parent = Frame
+piggy.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+piggy.Position = UDim2.new(0.018556701, 0, 0.164420485, 0)
+piggy.Size = UDim2.new(0, 216, 0, 140)
+piggy.Font = Enum.Font.SourceSans
+piggy.Text = "Piggy"
+piggy.TextColor3 = Color3.fromRGB(0, 0, 0)
+piggy.TextScaled = true
+piggy.TextSize = 14.000
+piggy.TextWrapped = true
 
 gungames.Name = "gungames"
 gungames.Parent = Frame
@@ -55,7 +62,7 @@ gungames.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
 gungames.Position = UDim2.new(0.511340201, 0, 0.164420485, 0)
 gungames.Size = UDim2.new(0, 216, 0, 140)
 gungames.Font = Enum.Font.SourceSans
-gungames.Text = "Gun Games"
+gungames.Text = "Hub Selector"
 gungames.TextColor3 = Color3.fromRGB(0, 0, 0)
 gungames.TextScaled = true
 gungames.TextSize = 14.000
@@ -67,7 +74,7 @@ easygggames.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
 easygggames.Position = UDim2.new(0.0185566843, 0, 0.57681942, 0)
 easygggames.Size = UDim2.new(0, 216, 0, 140)
 easygggames.Font = Enum.Font.SourceSans
-easygggames.Text = "Uncategorized  2"
+easygggames.Text = "Funky Friday"
 easygggames.TextColor3 = Color3.fromRGB(0, 0, 0)
 easygggames.TextScaled = true
 easygggames.TextSize = 14.000
@@ -86,82 +93,18 @@ creds.TextSize = 14.000
 creds.TextWrapped = true
 
 creds.MouseButton1Down:connect(function()
-	local Credits = Instance.new("ScreenGui")
-	local Frame = Instance.new("Frame")
-	local TextLabel = Instance.new("TextLabel")
-	local TextLabel_2 = Instance.new("TextLabel")
-	local TextLabel_3 = Instance.new("TextLabel")
-	local TextLabel_4 = Instance.new("TextLabel")
-	local TextButton = Instance.new("TextButton")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/credits%20REMADE",true))()
+end)
 
-	Credits.Name = "Credits"
-	Credits.Parent = game.Workspace
-	Credits.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+piggy.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/test",true))()
+end)
 
-	Frame.Parent = Credits
-	Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Frame.Position = UDim2.new(0.112239145, 0, 0.208510637, 0)
-	Frame.Size = UDim2.new(0, 392, 0, 284)
+easygggames.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
 
-	TextLabel.Parent = Frame
-	TextLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	TextLabel.Size = UDim2.new(0, 392, 0, 50)
-	TextLabel.Font = Enum.Font.SourceSans
-	TextLabel.Text = "Credits Screen"
-	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel.TextScaled = true
-	TextLabel.TextSize = 14.000
-	TextLabel.TextWrapped = true
-
-	TextLabel_2.Parent = Frame
-	TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_2.BackgroundTransparency = 1.000
-	TextLabel_2.Position = UDim2.new(0.221938774, 0, 0.17605634, 0)
-	TextLabel_2.Size = UDim2.new(0, 200, 0, 28)
-	TextLabel_2.Font = Enum.Font.SourceSans
-	TextLabel_2.Text = "Scripts: Logan's Script Library"
-	TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_2.TextScaled = true
-	TextLabel_2.TextSize = 14.000
-	TextLabel_2.TextWrapped = true
-
-	TextLabel_3.Parent = Frame
-	TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_3.BackgroundTransparency = 1.000
-	TextLabel_3.Position = UDim2.new(0.221938774, 0, 0.274647892, 0)
-	TextLabel_3.Size = UDim2.new(0, 200, 0, 28)
-	TextLabel_3.Font = Enum.Font.SourceSans
-	TextLabel_3.Text = "UI: Logan The Dev"
-	TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_3.TextScaled = true
-	TextLabel_3.TextSize = 14.000
-	TextLabel_3.TextWrapped = true
-
-	TextLabel_4.Parent = Frame
-	TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_4.BackgroundTransparency = 1.000
-	TextLabel_4.Position = UDim2.new(0.221938774, 0, 0.373239458, 0)
-	TextLabel_4.Size = UDim2.new(0, 200, 0, 28)
-	TextLabel_4.Font = Enum.Font.SourceSans
-	TextLabel_4.Text = "Script Originator: too many people"
-	TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_4.TextScaled = true
-	TextLabel_4.TextSize = 14.000
-	TextLabel_4.TextWrapped = true
-
-	TextButton.Parent = Frame
-	TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-	TextButton.Position = UDim2.new(0.858536601, 0, 0, 0)
-	TextButton.Size = UDim2.new(0, 55, 0, 50)
-	TextButton.Font = Enum.Font.SourceSans
-	TextButton.Text = "X"
-	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-	TextButton.TextScaled = true
-	TextButton.TextSize = 14.000
-	TextButton.TextWrapped = true
-
-	TextButton.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
+gungames.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/hubs",true))()
 end)
 
