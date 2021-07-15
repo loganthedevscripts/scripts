@@ -9,7 +9,7 @@ local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local SkyWars = Instance.new("TextButton")
 local mm = Instance.new("TextButton")
-local easygggames = Instance.new("TextButton")
+local resturant = Instance.new("TextButton")
 local page = Instance.new("TextButton")
 
 --Properties:
@@ -62,23 +62,23 @@ mm.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
 mm.Position = UDim2.new(0.511340201, 0, 0.164420485, 0)
 mm.Size = UDim2.new(0, 216, 0, 140)
 mm.Font = Enum.Font.SourceSans
-mm.Text = "The MMs"
+mm.Text = "MM2"
 mm.TextColor3 = Color3.fromRGB(0, 0, 0)
 mm.TextScaled = true
 mm.TextSize = 14.000
 mm.TextWrapped = true
 
-easygggames.Name = "easygggames"
-easygggames.Parent = Frame
-easygggames.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
-easygggames.Position = UDim2.new(0.0185566843, 0, 0.57681942, 0)
-easygggames.Size = UDim2.new(0, 216, 0, 140)
-easygggames.Font = Enum.Font.SourceSans
-easygggames.Text = "Easy.gg Games"
-easygggames.TextColor3 = Color3.fromRGB(0, 0, 0)
-easygggames.TextScaled = true
-easygggames.TextSize = 14.000
-easygggames.TextWrapped = true
+resturant.Name = "resturant"
+resturant.Parent = Frame
+resturant.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+resturant.Position = UDim2.new(0.0185566843, 0, 0.57681942, 0)
+resturant.Size = UDim2.new(0, 216, 0, 140)
+resturant.Font = Enum.Font.SourceSans
+resturant.Text = "My Resturant"
+resturant.TextColor3 = Color3.fromRGB(0, 0, 0)
+resturant.TextScaled = true
+resturant.TextSize = 14.000
+resturant.TextWrapped = true
 
 page.Name = "page"
 page.Parent = Frame
@@ -92,8 +92,19 @@ page.TextScaled = true
 page.TextSize = 14.000
 page.TextWrapped = true
 
-page.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/gui3",true))()
+SkyWars.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DohmBoyOG/Script-Dump/main/OPSkywarsGUI_NolixXDohmScripts_Public.lua"))()
+end)
 
+mm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
+
+resturant.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+end)
+
+page.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/gui3"))();
 end)
 
