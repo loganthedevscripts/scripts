@@ -186,18 +186,18 @@ end
 coroutine.wrap(RMTLAR_fake_script)()
 
 page.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/gui3"))()
+	loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/gui3"))()
 end)
 
 mm.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
 end)
 
 resturant.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+	loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
 end)
 
 SkyWars.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DohmBoyOG/Script-Dump/main/OPSkywarsGUI_NolixXDohmScripts_Public.lua"))()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DohmBoyOG/Script-Dump/main/OPSkywarsGUI_NolixXDohmScripts_Public.lua"))()
 end)
 
