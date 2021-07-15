@@ -1,0 +1,93 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Credits = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+Credits.Name = "Credits"
+Credits.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Credits.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Credits
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.112239145, 0, 0.208510637, 0)
+Frame.Size = UDim2.new(0, 392, 0, 284)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextLabel.Size = UDim2.new(0, 392, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Credits Screen"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.221938774, 0, 0.17605634, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 28)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Scripts: Logan's Script Library"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.221938774, 0, 0.274647892, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 28)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "UI: Logan The Dev"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.221938774, 0, 0.373239458, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 28)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Script Originator: too many people"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.858536601, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 55, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.221938774, 0, 0.450704247, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 28)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "for more scripts, go to https://discord.gg/PcvfkNZFED"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
