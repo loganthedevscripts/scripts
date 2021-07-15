@@ -1,0 +1,104 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local HUBS = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local OwlHub = Instance.new("TextButton")
+local UnnamedHub = Instance.new("TextButton")
+local VoltHub = Instance.new("TextButton")
+local MonkeyHub = Instance.new("TextButton")
+local DarkHub = Instance.new("TextButton")
+
+--Properties:
+
+HUBS.Name = "HUBS"
+HUBS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+HUBS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = HUBS
+Frame.BackgroundColor3 = Color3.fromRGB(73, 115, 255)
+Frame.Position = UDim2.new(0.0242526811, 0, 0.549787223, 0)
+Frame.Size = UDim2.new(0, 516, 0, 392)
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Frame
+OwlHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.Position = UDim2.new(0.0174418613, 0, 0.0357142873, 0)
+OwlHub.Size = UDim2.new(0, 197, 0, 173)
+OwlHub.Font = Enum.Font.SourceSans
+OwlHub.Text = "Owl Hub"
+OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+OwlHub.TextScaled = true
+OwlHub.TextSize = 14.000
+OwlHub.TextWrapped = true
+
+UnnamedHub.Name = "UnnamedHub"
+UnnamedHub.Parent = Frame
+UnnamedHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnnamedHub.Position = UDim2.new(0.585271299, 0, 0.0357142873, 0)
+UnnamedHub.Size = UDim2.new(0, 197, 0, 173)
+UnnamedHub.Font = Enum.Font.SourceSans
+UnnamedHub.Text = "Unnamed Hub"
+UnnamedHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnnamedHub.TextScaled = true
+UnnamedHub.TextSize = 14.000
+UnnamedHub.TextWrapped = true
+
+BruhHub.Name = "BruhHub"
+BruhHub.Parent = Frame
+BruhHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BruhHub.Position = UDim2.new(0.0174418688, 0, 0.520408154, 0)
+BruhHub.Size = UDim2.new(0, 197, 0, 173)
+BruhHub.Font = Enum.Font.SourceSans
+BruhHub.Text = "Bruh Hub"
+BruhHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+BruhHub.TextScaled = true
+BruhHub.TextSize = 14.000
+BruhHub.TextWrapped = true
+
+MonkeyHub.Name = "MonkeyHub"
+MonkeyHub.Parent = Frame
+MonkeyHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MonkeyHub.Position = UDim2.new(0.583333373, 0, 0.520408154, 0)
+MonkeyHub.Size = UDim2.new(0, 197, 0, 173)
+MonkeyHub.Font = Enum.Font.SourceSans
+MonkeyHub.Text = "Monkey Hub"
+MonkeyHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+MonkeyHub.TextScaled = true
+MonkeyHub.TextSize = 14.000
+MonkeyHub.TextWrapped = true
+
+DarkHub.Name = "DarkHub"
+DarkHub.Parent = Frame
+DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.Position = UDim2.new(0.414728731, 0, 0.0204081628, 0)
+DarkHub.Size = UDim2.new(0, 79, 0, 377)
+DarkHub.Font = Enum.Font.SourceSans
+DarkHub.Text = "Dark Hub"
+DarkHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkHub.TextScaled = true
+DarkHub.TextSize = 14.000
+DarkHub.TextWrapped = true
+
+DarkHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+OwlHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+end)
+
+BruhHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+end)
+
+UnnamedHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
+end)
+
+MonkeyHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+end)
+
