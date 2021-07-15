@@ -83,22 +83,22 @@ DarkHub.TextSize = 14.000
 DarkHub.TextWrapped = true
 
 OwlHub.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
 end)
 
 DarkHub.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
 end)
 
 MonkeyHub.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
 end)
 
 UnnamedHub.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
+	loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
 end)
 
 VoltHub.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
 end)
 
