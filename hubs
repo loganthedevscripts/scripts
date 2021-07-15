@@ -46,17 +46,17 @@ UnnamedHub.TextScaled = true
 UnnamedHub.TextSize = 14.000
 UnnamedHub.TextWrapped = true
 
-BruhHub.Name = "BruhHub"
-BruhHub.Parent = Frame
-BruhHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BruhHub.Position = UDim2.new(0.0174418688, 0, 0.520408154, 0)
-BruhHub.Size = UDim2.new(0, 197, 0, 173)
-BruhHub.Font = Enum.Font.SourceSans
-BruhHub.Text = "Bruh Hub"
-BruhHub.TextColor3 = Color3.fromRGB(0, 0, 0)
-BruhHub.TextScaled = true
-BruhHub.TextSize = 14.000
-BruhHub.TextWrapped = true
+VoltHub.Name = "VoltHub"
+VoltHub.Parent = Frame
+VoltHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VoltHub.Position = UDim2.new(0.0174418688, 0, 0.520408154, 0)
+VoltHub.Size = UDim2.new(0, 197, 0, 173)
+VoltHub.Font = Enum.Font.SourceSans
+VoltHub.Text = "Volt Hub"
+VoltHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+VoltHub.TextScaled = true
+VoltHub.TextSize = 14.000
+VoltHub.TextWrapped = true
 
 MonkeyHub.Name = "MonkeyHub"
 MonkeyHub.Parent = Frame
@@ -82,23 +82,23 @@ DarkHub.TextScaled = true
 DarkHub.TextSize = 14.000
 DarkHub.TextWrapped = true
 
-DarkHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
-end)
-
 OwlHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
 end)
 
-BruhHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
-end)
-
-UnnamedHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
+DarkHub.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
 end)
 
 MonkeyHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+end)
+
+UnnamedHub.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
+end)
+
+VoltHub.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
 end)
 
