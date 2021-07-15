@@ -1,0 +1,116 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local PrisonLife = Instance.new("TextButton")
+local Jailbreak = Instance.new("TextButton")
+local easygggames = Instance.new("TextButton")
+local page = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(67, 95, 255)
+Frame.Position = UDim2.new(0.354765952, 0, 0.422127664, 0)
+Frame.Size = UDim2.new(0, 485, 0, 371)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(41, 255, 41)
+TextLabel.Size = UDim2.new(0, 430, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Gogang Script Hub Selector"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.886597812, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 55, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = Frame
+PrisonLife.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+PrisonLife.Position = UDim2.new(0.018556701, 0, 0.164420485, 0)
+PrisonLife.Size = UDim2.new(0, 216, 0, 140)
+PrisonLife.Font = Enum.Font.SourceSans
+PrisonLife.Text = "Prison Life"
+PrisonLife.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrisonLife.TextScaled = true
+PrisonLife.TextSize = 14.000
+PrisonLife.TextWrapped = true
+
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = Frame
+Jailbreak.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+Jailbreak.Position = UDim2.new(0.511340201, 0, 0.164420485, 0)
+Jailbreak.Size = UDim2.new(0, 216, 0, 140)
+Jailbreak.Font = Enum.Font.SourceSans
+Jailbreak.Text = "Jailbreak"
+Jailbreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jailbreak.TextScaled = true
+Jailbreak.TextSize = 14.000
+Jailbreak.TextWrapped = true
+
+easygggames.Name = "easygggames"
+easygggames.Parent = Frame
+easygggames.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+easygggames.Position = UDim2.new(0.0185566843, 0, 0.57681942, 0)
+easygggames.Size = UDim2.new(0, 216, 0, 140)
+easygggames.Font = Enum.Font.SourceSans
+easygggames.Text = "Easy.gg Games"
+easygggames.TextColor3 = Color3.fromRGB(0, 0, 0)
+easygggames.TextScaled = true
+easygggames.TextSize = 14.000
+easygggames.TextWrapped = true
+
+page.Name = "page"
+page.Parent = Frame
+page.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+page.Position = UDim2.new(0.511340141, 0, 0.57681942, 0)
+page.Size = UDim2.new(0, 216, 0, 140)
+page.Font = Enum.Font.SourceSans
+page.Text = "Next Page"
+page.TextColor3 = Color3.fromRGB(0, 0, 0)
+page.TextScaled = true
+page.TextSize = 14.000
+page.TextWrapped = true
+
+PrisonLife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
+end)
+
+Jailbreak.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+end)
+
+easygggames.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
+end)
+
+page.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/gui2finishfresh"))();
+end)
+
+easygggames.MouseButton1Down:connect(function()
+	script: loadstring(game:HttpGet("loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+end)
+
+PrisonLife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()"))()
+end)
