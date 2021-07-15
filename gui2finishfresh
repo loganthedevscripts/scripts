@@ -194,7 +194,7 @@ mm.MouseButton1Down:connect(function()
 end)
 
 resturant.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+	script: loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
 end)
 
 SkyWars.MouseButton1Down:connect(function()
