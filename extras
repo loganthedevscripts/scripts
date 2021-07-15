@@ -120,3 +120,27 @@ Speed.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Hviqz/Scripts/main/Speed%20Tycoon%20Simulator%3F", true))()
 end)
 
+
+local object = script.Parent
+object.AnchorPoint = Vector2.new(0.5, 0.5)
+object.Position = UDim2.new(0.1, 0, 0.5, 0)
+
+wait(2)
+
+object:TweenPosition(UDim2.new(0.5, 0, 0.5, 0))
+
+local object = script.Parent
+object.AnchorPoint = Vector2.new(0.5, 0.5)
+object.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+wait(5)
+
+object:TweenSize(UDim2.new(0, 400, 0, 100))
+
+local object = script.Parent
+object.AnchorPoint = Vector2.new(0.5, 0.5)
+object.Position = UDim2.new(0, -object.Size.X.Offset, 0.5, 0)
+
+wait(8)
+
+object:TweenPosition(UDim2.new(0.5, 0, 0.5, 0))
