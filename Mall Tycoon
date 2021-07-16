@@ -1,0 +1,83 @@
+local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
+local w = library:CreateWindow("Mall Tycoon")
+local b = w:CreateFolder("AutoFarm")
+local e = w:CreateFolder("Mix")
+local u = w:CreateFolder("Credits")
+
+--Toggle
+b:Toggle("AutoCollectButtons",function(bool)
+    shared.toggle = bool
+    AutoBuy = bool
+end)
+
+b:Toggle("AutoSelectStore",function(bool)
+    shared.toggle = bool
+    AutoSelectStore = bool
+end)
+
+b:Toggle("AutoRebirth",function(bool)
+    shared.toggle = bool
+    AutoRebirth = bool
+end)
+
+e:Toggle("AntiAfk",function(bool)
+    shared.toggle = bool
+    AntiAfk = bool
+end)
+
+--Credits
+u:Button("maxgat5#8395",function()
+    setclipboard("maxgat5#8395")
+end)
+ 
+u:Button("Discrod Server",function()
+    setclipboard("https://discord.gg/K4txdRSVfq")
+end)
+
+while true do
+    wait()
+    if AutoSelectStore == true then
+        local Store = game.Players.LocalPlayer.PlayerGui.Interface.PickStore.PickStore.Background.RoundedBackground:GetChildren()
+        for i,v in pairs(Store) do
+            if v.ClassName == "ImageButton" then
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer("AttemptPurchaseStore",v.StoreTitle.Text)
+            end
+        end
+    end
+    
+    if AutoRebirth == true then
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer("RequestRebirth")
+    end
+    
+    if AutoBuy == true then
+        local player = game.Players.LocalPlayer
+        local stuff = {}
+        if game:GetService("CoreGui"):FindFirstChild("PurchasePromptApp") then
+            game:GetService("CoreGui").PurchasePromptApp:Destroy()
+        end
+        local workspace = game:GetService("Workspace"):GetDescendants()
+        for i = 1, #workspace do 
+            local v = workspace[i]
+            if v.ClassName == "TouchTransmitter" then
+                table.insert(stuff,v)
+            end
+        end
+        for i = 1, #stuff do 
+            local v = stuff[i]
+            if v.Parent then
+                if v.Parent.ClassName == "Part" or v.Parent.ClassName == "MeshPart" then
+                    v.Parent.CanCollide = false
+                    v.Parent.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,math.random(-1,1),0)
+                end
+            end
+        end
+    end
+    
+    if AntiAfk == true then
+        local bb=game:service'VirtualUser'
+        game:service'Players'.LocalPlayer.Idled:connect(function()
+            bb:CaptureController()
+            bb:ClickButton2(Vector2.new())
+        end)
+    end
+end
