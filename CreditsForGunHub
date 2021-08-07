@@ -24,7 +24,7 @@ GunHub.Name = "GunHub"
 GunHub.Parent = Credits
 GunHub.BackgroundColor3 = Color3.fromRGB(131, 255, 64)
 GunHub.BackgroundTransparency = 1.000
-GunHub.Position = UDim2.new(0.314620674, 0, 0.639497519, 0)
+GunHub.Position = UDim2.new(0.132657379, 0, 0.610996902, 0)
 GunHub.Size = UDim2.new(0, 530, 0, 305)
 GunHub.Image = "rbxassetid://3570695787"
 GunHub.ImageColor3 = Color3.fromRGB(40, 187, 240)
@@ -137,7 +137,7 @@ TextLabel_5.TextWrapped = true
 
 -- Scripts:
 
-local function RSIGOQW_fake_script() -- Title.LocalScript 
+local function PRZQFLO_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	local UIS = game:GetService('UserInputService')
@@ -212,12 +212,12 @@ local function RSIGOQW_fake_script() -- Title.LocalScript
 	
 	
 end
-coroutine.wrap(RSIGOQW_fake_script)()
-local function XWOMD_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(PRZQFLO_fake_script)()
+local function PWNTJE_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(XWOMD_fake_script)()
+coroutine.wrap(PWNTJE_fake_script)()
