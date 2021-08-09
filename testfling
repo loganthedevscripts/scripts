@@ -1,4 +1,4 @@
-`local lp = game:FindService("Players").LocalPlayer
+local lp = game:FindService("Players").LocalPlayer
 
 local function gplr(String)
     local Found = {}
@@ -122,4 +122,4 @@ TextButton.MouseButton1Click:Connect(function()
 end)
 
 --//fsddfsdf
-notif("Loaded successfully!", 5)`
+notif("Loaded successfully!", 5)
